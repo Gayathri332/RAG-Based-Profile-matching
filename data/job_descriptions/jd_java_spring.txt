@@ -1,0 +1,9 @@
+Job Description: Senior Java & Spring Boot Developer
+
+We are hiring a Senior Java Developer to build distributed backend systems.
+Requirements:
+- Must have 6+ years of experience
+- Advanced skills in Java and Spring Boot framework
+- Experience building streaming pipelines with Kafka
+- Strong SQL knowledge
+- Experience with container tools (Docker, Kubernetes) is a plus.

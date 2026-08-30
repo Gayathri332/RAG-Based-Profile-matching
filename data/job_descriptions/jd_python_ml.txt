@@ -1,0 +1,8 @@
+Job Description: Python & Machine Learning Engineer
+
+We are looking for a Machine Learning Engineer to join our team. The candidate will build production NLP systems, RAG models, and large language model systems.
+Requirements:
+- Must have 3+ years of experience
+- Strong experience in Python, Machine Learning, and libraries like PyTorch/TensorFlow
+- Experience with LangChain, RAG systems, and generative AI is a strong plus
+- Knowledge of Git and software engineering practices.

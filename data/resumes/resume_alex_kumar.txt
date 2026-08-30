@@ -1,0 +1,20 @@
+Alex Kumar
+Machine Learning Engineer
+
+SUMMARY:
+Machine Learning Engineer with 4+ years of experience. Passionate Machine Learning Engineer specializing in NLP, Large Language Models, and RAG systems.
+
+SKILLS:
+Python, Machine Learning, LangChain, RAG, Data Science, PyTorch, Git
+
+EXPERIENCE:
+Machine Learning Engineer at TechAI (2022-Present)
+- Built advanced RAG systems using LangChain and Python.
+- Improved retrieval accuracy by 25% using hybrid search.
+
+Data Scientist at DataCorp (2020-2022)
+- Analyzed user data using Pandas and NumPy.
+- Built predictive models using Scikit-Learn.
+
+EDUCATION:
+B.Tech in Computer Science, IIT

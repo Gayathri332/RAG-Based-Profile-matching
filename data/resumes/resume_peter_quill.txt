@@ -1,0 +1,16 @@
+Peter Quill
+Mobile React Native Developer
+
+SUMMARY:
+Mobile React Native Developer with 5+ years of experience. Mobile software engineer crafting music apps and rich interactive media apps using React Native.
+
+SKILLS:
+React Native, React, JavaScript, TypeScript, Git, HTML, CSS
+
+EXPERIENCE:
+Mobile App Engineer at MilanoApps (2021-Present)
+- Published four cross-platform apps on Google Play Store.
+- Designed customized responsive screens in React Native.
+
+EDUCATION:
+B.S. in Media Arts, Colorado

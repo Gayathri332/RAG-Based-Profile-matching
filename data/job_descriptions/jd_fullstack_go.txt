@@ -1,0 +1,9 @@
+Job Description: Full Stack Developer (Golang & React)
+
+We are looking for a developer to work on both backend services and frontend applications.
+Requirements:
+- Must have 4+ years of experience
+- Solid experience building backend APIs in Go / Golang
+- Experience with React frontend development
+- Good knowledge of SQL (PostgreSQL / MySQL)
+- Familiarity with Docker and Git.

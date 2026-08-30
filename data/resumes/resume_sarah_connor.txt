@@ -1,0 +1,16 @@
+Sarah Connor
+Data Scientist
+
+SUMMARY:
+Data Scientist with 7+ years of experience. Data Scientist with a solid academic background in Statistics and expertise in deep learning, predictive modeling, and big data analysis.
+
+SKILLS:
+Python, Data Science, Machine Learning, Deep Learning, TensorFlow, Pandas, NumPy, SQL
+
+EXPERIENCE:
+Lead Data Scientist at Cyberdyne (2019-Present)
+- Developed deep learning models using TensorFlow for predictive maintenance.
+- Analyzed complex datasets using Pandas and NumPy.
+
+EDUCATION:
+PhD in Statistics, MIT

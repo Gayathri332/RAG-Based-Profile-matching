@@ -1,0 +1,9 @@
+Job Description: DevOps & Cloud Infrastructure Architect
+
+We are looking for a DevOps Architect to automate deployments and manage cloud environments.
+Requirements:
+- Must have 5+ years of experience
+- Expert knowledge of AWS cloud provider
+- Strong experience with Terraform (Infrastructure as Code)
+- Experience with container orchestration using Docker and Kubernetes
+- Strong CI/CD automation skill using Jenkins or GitHub Actions.

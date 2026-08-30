@@ -1,0 +1,19 @@
+Rahul Mehta
+Distributed Systems Engineer
+
+SUMMARY:
+Distributed Systems Engineer with 5+ years of experience. Distributed systems engineer with 5+ years of backend engineering experience building scalable microservices.
+
+SKILLS:
+Java, Spring Boot, Kafka, SQL, Python, Generative AI, Docker, Kubernetes, AWS
+
+EXPERIENCE:
+Backend Engineer at KafkaTech (2021-Present)
+- Engineered highly concurrent streaming pipelines using Kafka and Spring Boot.
+- Deployed production Docker containers to AWS EKS.
+
+Software Developer at DataSoft (2021-2021)
+- Developed Java backend services and REST APIs.
+
+EDUCATION:
+B.Tech in Information Technology, SRMIST

@@ -1,0 +1,16 @@
+Diana Prince
+Product Manager
+
+SUMMARY:
+Product Manager with 8+ years of experience. Technical Product Manager with a strong software engineering background, managing roadmap and release cycles for cloud products.
+
+SKILLS:
+Git, Python, SQL, Jira, AWS
+
+EXPERIENCE:
+Senior PM at Olympus Tech (2018-Present)
+- Launched three major SaaS products generating $5M+ ARR.
+- Wrote technical specifications and query databases using SQL.
+
+EDUCATION:
+MBA, Harvard Business School

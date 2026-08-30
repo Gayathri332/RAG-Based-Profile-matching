@@ -1,0 +1,16 @@
+Ellen Ripley
+Engineering Manager
+
+SUMMARY:
+Engineering Manager with 12+ years of experience. Engineering Manager with 12+ years of technical leadership experience managing cross-functional software teams.
+
+SKILLS:
+Git, CI/CD, Linux, AWS, Python, SQL, Docker
+
+EXPERIENCE:
+Engineering Manager at Weyland-Yutani (2014-Present)
+- Managed teams of 15+ backend and DevOps engineers.
+- Directed migration of legacy systems to AWS.
+
+EDUCATION:
+M.S. in Engineering Management, Cornell

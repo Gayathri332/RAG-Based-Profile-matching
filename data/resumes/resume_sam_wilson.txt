@@ -1,0 +1,16 @@
+Sam Wilson
+Cloud Security Specialist
+
+SUMMARY:
+Cloud Security Specialist with 5+ years of experience. Cloud Security Consultant analyzing cloud architecture vulnerabilities and establishing strict IAM security configurations.
+
+SKILLS:
+AWS, Azure, Linux, Git, CI/CD, Docker, Terraform
+
+EXPERIENCE:
+Cloud Security Engineer at FalconCloud (2021-Present)
+- Configured cloud firewalls and IAM roles on AWS.
+- Conducted container scanning and Docker auditing.
+
+EDUCATION:
+B.S. in Cybersecurity, Howard University

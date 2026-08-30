@@ -1,0 +1,16 @@
+Arthur Curry
+Database Administrator
+
+SUMMARY:
+Database Administrator with 7+ years of experience. Database Administrator specializing in high-availability database architectures, replication, and query tuning.
+
+SKILLS:
+SQL, PostgreSQL, MySQL, MongoDB, Cassandra, Redis, Linux
+
+EXPERIENCE:
+Lead DBA at AtlantisData (2019-Present)
+- Maintained large PostgreSQL and Cassandra clusters.
+- Spearheaded database replication and backup strategy.
+
+EDUCATION:
+M.S. in Database Systems, University of Maine

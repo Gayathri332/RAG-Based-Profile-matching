@@ -1,0 +1,16 @@
+Steve Rogers
+Scrum Master
+
+SUMMARY:
+Scrum Master with 8+ years of experience. Certified Scrum Master with 8 years of experience leading agile transitions and managing software development lifecycles.
+
+SKILLS:
+Git, Jira, Linux, SQL, Python
+
+EXPERIENCE:
+Scrum Master at ShieldTech (2018-Present)
+- Facilitated agile ceremonies and sprint planning for 4 developers.
+- Tracked velocity and release metrics.
+
+EDUCATION:
+B.S. in Business Administration, Brooklyn College

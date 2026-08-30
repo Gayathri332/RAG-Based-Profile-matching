@@ -1,0 +1,8 @@
+Job Description: Frontend Web Developer (React & TypeScript)
+
+We need a Frontend Developer to build clean, interactive web user interfaces.
+Requirements:
+- Must have 3+ years of experience
+- Expert skills in React, JavaScript, and TypeScript
+- Strong knowledge of HTML5, CSS3, and responsive design
+- Experience with GraphQL APIs and state management.

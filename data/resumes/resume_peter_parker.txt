@@ -1,0 +1,16 @@
+Peter Parker
+Python Developer
+
+SUMMARY:
+Python Developer with 2+ years of experience. Junior Python Developer with experience in web scraping, scripting, and backend web development using Flask and Django.
+
+SKILLS:
+Python, Flask, Django, SQL, Git, HTML, CSS
+
+EXPERIENCE:
+Python Developer at DailyBugle (2024-Present)
+- Built web scrapers and internal data tools using Python.
+- Maintained database records using SQL.
+
+EDUCATION:
+B.S. in Computer Science, Queens College
