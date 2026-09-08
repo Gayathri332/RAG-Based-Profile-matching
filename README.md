@@ -265,25 +265,25 @@ index" checkbox if you want to start clean.
 
 ```json
 Loading weights: 100%|███████████████████████████████████████████████| 103/103 [00:00<00:00, 9225.14it/s]
-Matching JD: 'Looking for a Python developer with 3+ years experience and knowledge of Docker/Kubernetes.'
-Auto-detected experience requirement from JD: 3+ years
+Matching JD: 'Looking for a Python developer with 1+ years experience and knowledge of Docker/Kubernetes.'
+Auto-detected experience requirement from JD: 1+ years
 No explicit must-have skills filter applied.
 {
-  "job_description": "Looking for a Python developer with 3+ years experience and knowledge of Docker/Kubernetes.",
+  "job_description": "Looking for a Python developer with 1+ years experience and knowledge of Docker/Kubernetes.",
   "top_matches": [
     {
-      "candidate_name": "Marcus Wright",
+      "candidate_name": "Alice Smith",
       "resume_path": "data/resumes/resume_marcus_wright.docx",
       "match_score": 60,
       "matched_skills": [],
       "relevant_excerpts": [
-        "Full Stack Developer with 3+ years of experience. Full Stack Engineer specializing in the MERN stack with 3 years of experience building web applications.",
+        "Full Stack Developer with 1+ years of experience. Full Stack Engineer specializing in the MERN stack with 3 years of experience building web applications.",
         "Full Stack Developer at ProjectAngel (2023-Present)\n- Created user-facing features using React.\n- Designed backend services using Node.js and Express."
       ],
-      "reasoning": "Candidate possesses 3 years of experience (education: 'B.S. in Computer Science, UT Austin'). Highest matching content was found in sections: SUMMARY."
+      "reasoning": "Candidate possesses 1 years of experience (education: 'B.S. in Computer Science, UT Austin'). Highest matching content was found in sections: SUMMARY."
     },
     {
-      "candidate_name": "John Doe",
+      "candidate_name": "Bob",
       "resume_path": "data/resumes/resume_john_doe.pdf",
       "match_score": 60,
       "matched_skills": [
@@ -291,23 +291,23 @@ No explicit must-have skills filter applied.
         "Python"
       ],
       "relevant_excerpts": [
-        "Backend Developer with 5+ years of experience. Backend Developer with 5 years of experience\nbuilding APIs, managing databases, and containerizing software.",
+        "Backend Developer with 3+ years of experience. Backend Developer with 5 years of experience\nbuilding APIs, managing databases, and containerizing software.",
         "Python, FastAPI, SQL, PostgreSQL, Docker, Git, REST API"
       ],
-      "reasoning": "Strong skill overlap for Docker, Python. Candidate possesses 5 years of experience (education: 'M.S. in Computer Science, Georgia Tech'). Highest matching content was found in sections: SUMMARY."
+      "reasoning": "Strong skill overlap for Docker, Python. Candidate possesses 3 years of experience (education: 'M.S. in Computer Science, Georgia Tech'). Highest matching content was found in sections: SUMMARY."
     },
     {
-      "candidate_name": "Diana Prince",
+      "candidate_name": "Carol Danvers",
       "resume_path": "data/resumes/resume_diana_prince.txt",
       "match_score": 53,
       "matched_skills": [
         "Python"
       ],
       "relevant_excerpts": [
-        "Product Manager with 8+ years of experience. Technical Product Manager with a strong software engineering background, managing roadmap and release cycles for cloud products.",
+        "Product Manager with 4+ years of experience. Technical Product Manager with a strong software engineering background, managing roadmap and release cycles for cloud products.",
         "Git, Python, SQL, Jira, AWS"
       ],
-      "reasoning": "Strong skill overlap for Python. Candidate possesses 8 years of experience (education: 'Not Specified'). Highest matching content was found in sections: SUMMARY."
+      "reasoning": "Strong skill overlap for Python. Candidate possesses 4 years of experience (education: 'Not Specified'). Highest matching content was found in sections: SUMMARY."
     },
     ....
   ]
