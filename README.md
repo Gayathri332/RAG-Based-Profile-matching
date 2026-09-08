@@ -6,12 +6,12 @@ This project implements a Retrieval-Augmented Generation (RAG) profile matching 
 
 ---
 
-## Core Architecture
+# Core Architecture
 
-### System Flow & Architecture
+## System Flow & Architecture
 
-flowchart LR
 ```mermaid
+flowchart LR
     %% =========================
     %% 1. INGESTION
     %% =========================
@@ -110,7 +110,6 @@ flowchart LR
     class ME,RC,EXP,FIL,SEM,BM,SCORE,AGG,REASON logic;
     class CH storage;
     class RANK output;
-```mermaid
 ---
 
 ### 1. File Access Layer (`fs_tools.py`)
