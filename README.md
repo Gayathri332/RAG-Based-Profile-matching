@@ -10,65 +10,106 @@ This project implements a Retrieval-Augmented Generation (RAG) profile matching 
 
 ### System Flow & Architecture
 
-```mermaid
-graph TD
-    %% Styling
-    classDef default fill:#1e1e24,stroke:#3a3f58,stroke-width:1px,color:#dcdcdc;
-    classDef highlight fill:#4a154b,stroke:#e01e5a,stroke-width:2px,color:#ffffff;
-    classDef storage fill:#154b3c,stroke:#2e8b57,stroke-width:2px,color:#ffffff;
-    classDef process fill:#1d3557,stroke:#457b9d,stroke-width:2px,color:#ffffff;
-    classDef logic fill:#3d348b,stroke:#7678ed,stroke-width:2px,color:#ffffff;
+flowchart LR
 
-    subgraph INGEST ["1. Resume Ingestion Pipeline"]
-        A["Resume Files (.txt, .pdf, .docx)"] --> B(fs_tools.py)
-        B --> C(resume_rag.py)
+    %% =========================
+    %% 1. INGESTION
+    %% =========================
+    subgraph A["📄 1. Resume Ingestion"]
+        direction TB
 
-        subgraph PROCESSING ["Document Processing"]
-            C --> D[MetadataExtractor]
-            C --> E[ResumeChunker]
+        R["Resume Files<br/>TXT • PDF • DOCX"]
+        FS["fs_tools.py<br/>File Extraction"]
+        RR["resume_rag.py<br/>RAG Pipeline"]
 
-            D --> D1[Candidate Name]
-            D --> D2[Skills & Techs]
-            D --> D3[Exp Years]
-            D --> D4[Education]
+        R --> FS --> RR
 
-            E --> E1["Section Chunks (SUMMARY, SKILLS, etc.)"]
+        subgraph DP["Document Processing"]
+            direction LR
+            ME["Metadata Extractor<br/>👤 Name<br/>🛠 Skills<br/>⏳ Experience<br/>🎓 Education"]
+            RC["Resume Chunker<br/>SUMMARY • SKILLS<br/>EXPERIENCE • EDUCATION"]
         end
 
-        D1 & D2 & D3 & D4 & E1 --> F[ResumeRAGPipeline]
-        F --> G["SentenceTransformer (all-MiniLM-L6-v2)"]
+        RR --> ME
+        RR --> RC
+
+        ME --> PIPE["ResumeRAGPipeline"]
+        RC --> PIPE
+
+        PIPE --> EMB["SentenceTransformer<br/><b>all-MiniLM-L6-v2</b>"]
     end
 
-    subgraph STORAGE ["2. Vector Database Storage"]
-        G --> H[("ChromaDB Collection: 'resumes'")]
+    %% =========================
+    %% 2. STORAGE
+    %% =========================
+    subgraph B["🗄️ 2. Vector Storage"]
+        direction TB
+
+        CH["ChromaDB<br/><b>resumes</b><br/><br/>Embeddings + Metadata"]
     end
 
-    subgraph MATCHING ["3. Job Matching Engine"]
-        JD["Job Description (JD)"] --> J(job_matcher.py)
-        J --> K[Auto-Detect Experience Requirement]
-        J --> L[Filter Constraints]
+    EMB --> CH
 
-        H -.-> M[Hybrid Retrieval Engine]
-        K & L & JD --> M
+    %% =========================
+    %% 3. MATCHING
+    %% =========================
+    subgraph C["🎯 3. Job Matching Engine"]
+        direction TB
 
-        subgraph SEARCH ["Hybrid Search Score (60/40)"]
-            M --> N["Semantic Search (Cosine Similarity)"]
-            M --> O["Keyword Search (BM25 Okapi)"]
+        JD["Job Description<br/>Skills • Experience • Constraints"]
+        JM["job_matcher.py"]
 
-            N --> P[Combined Hybrid Score]
-            O --> P
+        JD --> JM
+
+        EXP["Auto-Detect<br/>Experience Requirement"]
+        FIL["Apply Metadata<br/>Filter Constraints"]
+
+        JM --> EXP
+        JM --> FIL
+
+        HR["🔎 Hybrid Retrieval Engine"]
+
+        CH -. Resume Chunks .-> HR
+        EXP --> HR
+        FIL --> HR
+
+        subgraph HS["Hybrid Search • 60 / 40"]
+            direction LR
+
+            SEM["🧠 Semantic Search<br/>Cosine Similarity"]
+            BM["🔤 Keyword Search<br/>BM25 Okapi"]
+
+            SCORE["⚡ Combined<br/>Hybrid Score"]
+
+            SEM --> SCORE
+            BM --> SCORE
         end
 
-        P --> Q[Aggregate Max Chunk Score per Candidate]
-        Q --> R[Generate Match Reasoning & Skill Overlaps]
-        R --> S[Ranked Candidate Matches]
+        HR --> SEM
+        HR --> BM
+
+        SCORE --> AGG["📊 Max Chunk Score<br/>per Candidate"]
+
+        AGG --> REASON["💡 Match Reasoning<br/>+ Skill Overlaps"]
+
+        REASON --> RANK["🏆 Ranked<br/>Candidate Matches"]
     end
 
-    class A,JD highlight;
-    class H storage;
-    class B,C,F,J,M process;
-    class D,E,N,O,P,Q,R logic;
-```
+    %% =========================
+    %% STYLING
+    %% =========================
+
+    classDef input fill:#4a154b,stroke:#e01e5a,color:#fff,stroke-width:2px;
+    classDef process fill:#1d3557,stroke:#457b9d,color:#fff,stroke-width:2px;
+    classDef logic fill:#3d348b,stroke:#7678ed,color:#fff,stroke-width:2px;
+    classDef storage fill:#154b3c,stroke:#2e8b57,color:#fff,stroke-width:2px;
+    classDef output fill:#6a4c93,stroke:#c77dff,color:#fff,stroke-width:2px;
+
+    class R,JD input;
+    class FS,RR,PIPE,JM,HR process;
+    class ME,RC,EXP,FIL,SEM,BM,SCORE,AGG,REASON logic;
+    class CH storage;
+    class RANK output;
 
 ---
 
